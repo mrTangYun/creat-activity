@@ -1,0 +1,72 @@
+.pageEdit-container{
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: row;
+}
+.pageEdit-container > div {
+  flex: 1
+}
+.button-actions{
+  overflow-y: auto;
+}
+.page-thumbs {
+}
+.page-thumbs-list {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  justify-content: flex-start;
+}
+.page-thumbs-list-item {
+  position: relative;
+  padding: 0.2em;
+  border: 1px solid #e8e8e8;
+  border-radius: 0.5em;
+  margin: 0.2em;
+  cursor: pointer;
+  width: 60px;
+  overflow: hidden;
+}
+.page-thumbs-list-item img{
+  border-radius: 0.3em;
+  overflow: hidden;
+}
+.page-thumbs-list-item:hover, .page-thumbs-list-item.choosed {
+  border: 1px solid #1890ff;
+}
+.page-thumbs-list-item:hover .page-thumbs-list-item-btn-del{
+  /*display: flex;*/
+}
+.page-thumbs-list-item-btn-del{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5em;
+  display: none;
+}
+.page-layout{
+  background-image: url("./iphone.png");
+  background-size: 100% auto;
+  height: 0;
+  padding-bottom: 103%;
+  position: relative;
+}
+.page-layout > div {
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 88.7%;
+  height: 76.2%;
+  left: 5.6%;
+  top: 12%;
+  position: absolute;
+  background: #fff;
+  text-align: center;
+}
+.button-actions > div{
+  padding: 1em;
+}
